@@ -1,0 +1,86 @@
+:root {
+    --background-color: rgb(249, 236, 236);
+    --title-color: rgb(73, 15, 8);
+    --text-color: rgb(115, 53, 22);
+    --link-click-color: rgb(106, 79, 16);
+    --link-hover-color: rgb(244, 71, 68);
+}
+#title1 {
+    font: url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+    font-family: "New Rocker";
+    color: var(--title-color);
+    position: relative;
+    left: 450px;
+    font-size: 100px;
+}
+#title2 {
+    font: url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+    font-family: "New Rocker";
+    color: var(--title-color);
+    position: relative;
+    left: 475px;
+    font-size: 100px;
+}
+#quote1 {
+    font-family: sans-serif;
+    color: var(--text-color);
+    transform: rotate(-25deg);
+    font-size: 20px;
+    position: relative;
+    left: 50px;
+    bottom: 500px;
+}
+#quote2 {
+    font-family: sans-serif;
+    color: var(--text-color);
+    transform: rotate(-335deg);
+    font-size: 20px;
+    position: relative;
+    left: 950px;
+    bottom: 80px;
+}
+#description {
+    font-family: sans-serif;
+    color: var(--text-color);
+    font-size: 20px;
+    position: relative;
+    left: 240px;
+    bottom: 50px;
+}
+a:link {
+    font-family: sans-serif;
+    color: var(--text-color);
+    font-size: 20px;
+    position: relative;
+    left: 640px;
+    text-decoration: none;
+}
+a:visited {
+    font-family: sans-serif;
+    color: var(--link-click-color);
+    font-size: 20px;
+    position: relative;
+    left: 640px;
+    text-decoration: none;
+}
+a:hover {
+    font-family: sans-serif;
+    color: var(--link-hover-color);
+    font-size: 30px;
+    position: relative;
+    left: 640px;
+    text-decoration: none;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: rgb(184, 239, 199);
+        --title-color: rgb(63, 173, 32);
+        --text-color: rgb(34, 132, 102);
+        --link-click-color: rgb(51, 195, 173);
+        --link-hover-color: rgb(29, 144, 106);
+    }
+}

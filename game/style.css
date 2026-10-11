@@ -5,7 +5,7 @@
     --link-click-color: rgb(106, 79, 16);
     --link-hover-color: rgb(244, 71, 68);
 }
-#title1 {
+#title1{
     font: url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
     font-family: "New Rocker";
     color: var(--title-color);
@@ -39,7 +39,7 @@
     left: 950px;
     bottom: 80px;
 }
-#description {
+#description{
     font-family: sans-serif;
     color: var(--text-color);
     font-size: 20px;
@@ -47,7 +47,7 @@
     left: 240px;
     bottom: 50px;
 }
-a:link {
+#level :link {
     font-family: sans-serif;
     color: var(--text-color);
     font-size: 20px;
@@ -55,7 +55,7 @@ a:link {
     left: 640px;
     text-decoration: none;
 }
-a:visited {
+#level :visited {
     font-family: sans-serif;
     color: var(--link-click-color);
     font-size: 20px;
@@ -63,7 +63,7 @@ a:visited {
     left: 640px;
     text-decoration: none;
 }
-a:hover {
+#level :hover {
     font-family: sans-serif;
     color: var(--link-hover-color);
     font-size: 30px;
@@ -83,4 +83,60 @@ body {
         --link-click-color: rgb(51, 195, 173);
         --link-hover-color: rgb(29, 144, 106);
     }
+}
+#result {
+    font-family: "New Rocker", sans-serif;
+    color: var(--text-color);
+    font-size: 30px;
+    position: relative;
+    left: 700px;
+    top: -210px;
+}
+#timer {
+    position: relative;
+    left: 1000px;
+    top: -50px;
+    font-size: 30px;
+}
+input[type="text"] {
+    font-size: 20px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 2px solid var(--text-color);
+}
+#pageNum {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: var(--title-color);
+    font-size: 30px;
+    position: relative;
+    left: 200px;
+    top: 20px;
+}
+#question {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: var(--text-color);
+    font-size: 20px;
+    position: relative;
+    left: 700px;
+}
+form {
+    position: relative;
+    left: 700px;
+}
+#submitBtn {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: var(--background-color);
+    font-size: 20px;
+    position: relative;
+    border: 2px solid var(--text-color);
+    border-radius: 15px;
+    background-color: var(--text-color);
+}
+#videoContainer {
+    position: relative;
+    left: 200px;
+    top: -200px;
 }

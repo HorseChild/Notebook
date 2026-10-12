@@ -14,6 +14,7 @@ function generateQuestion() {
 //ends the game and displays the final score
 function finishGame(message) {
     clearInterval(timer);
+    window.gameProgress.saveRoundScore(1, score);
     document.getElementById("question").textContent = message;
     document.getElementById("myAnswer").disabled = true;
     document.getElementById("submitBtn").disabled = true;

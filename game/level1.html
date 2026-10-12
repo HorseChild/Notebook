@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
     <title>Packet 1</title>
 </head>
-<body>
-    <a href="game.html"> Packet 1 Paper 1</a>
-    <a href="l1r2.html"> Packet 1 Paper 2</a>
-    <a href="l1r3.html"> Packet 1 Paper 3</a>
+<body data-page="dashboard">
+    <p> Packet 1</p>
+    <ul>
+        <li><a data-round="1" data-label="Packet 1: Page 1" data-href="game.html" href="game.html">Packet 1: Page 1</a></li>
+        <li><a data-round="2" data-label="Packet 1: Page 2" data-href="l1r2.html" href="l1r2.html">Packet 1: Page 2</a></li>
+        <li><a data-round="3" data-label="Packet 1: Page 3" data-href="l1r3.html" href="l1r3.html">Packet 1: Page 3</a></li>
+    </ul>
+    <script src="game-progress.js"></script>
 </body>
 </html>

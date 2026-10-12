@@ -136,7 +136,16 @@ form {
     background-color: var(--text-color);
 }
 #videoContainer {
-    position: relative;
-    left: 200px;
-    top: -200px;
+    position: absolute;
+    left: 230px;
+    top: 100px;
+}
+#dashboard {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: var(--text-color);
+    font-size: 20px;
+    position: absolute;
+    left: 980px;
+    text-decoration: none;
 }

@@ -1,0 +1,27 @@
+a:link {
+    text-decoration: none;
+    color: #9a4848;
+    font-family: Arial, sans-serif;
+}
+a:visited {
+    text-decoration: none;
+    color: #9a4848;
+    font-family: Arial, sans-serif;
+}
+a:hover {
+    text-decoration: none;
+    color: #9a4848;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: rgb(249, 236, 236);
+    font-family: Arial, sans-serif;
+}
+p {
+    font-family: Arial, sans-serif;
+    color: #9a4848;
+}
+a[aria-disabled="true"] {
+    color: #777;
+    cursor: not-allowed;
+}

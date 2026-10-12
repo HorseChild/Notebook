@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Level 1: Third Round</title>
 </head>
-<body>
-    <h1> Page 3: Negative Numbers </h1>
+<body data-round="3">
+    <h1 id="pageNum"> Page 3: Negative Numbers </h1>
     <p id="timer"></p>
     <p id="question"></p>
     <form id="answerForm">
@@ -15,8 +15,13 @@
         <input id="myAnswer" type="text">
         <button id="submitBtn" type="submit">Submit</button>
     </form>
-    <p id="result"></p>
+    <p id="result">0/10</p>
+    <div id="videoContainer">
+        <p>Stuck? Use this video:</p>
+        <a href="https://www.youtube.com/watch?v=3-5DKCLJspM" target="_blank"> Click here to watch the video on YouTube</a>
+    </div>
     <p id="endoflevelmsg"></p>
+    <script src="game-progress.js"></script>
     <script src="Untitled-1.js"></script>
 </body>
 </html>

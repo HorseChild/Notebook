@@ -1,4 +1,10 @@
-// level one round 1.
+(() => {
+if (!window.gameProgress.isRoundUnlocked(2)) {
+    window.gameProgress.showLockedRound(2);
+    return;
+}
+
+// level one round 2.
 let score = 0;
 let currentAnswer = 0;
 let timeRemaining = 100;
@@ -18,6 +24,7 @@ function generateQuestion() {
 //ends the game and displays the final score
 function finishGame(message) {
     clearInterval(timer);
+    window.gameProgress.saveRoundScore(2, score);
     document.getElementById("question").textContent = message;
     document.getElementById("myAnswer").disabled = true;
     document.getElementById("submitBtn").disabled = true;
@@ -55,3 +62,4 @@ document.getElementById("answerForm").addEventListener("submit", function (event
 
     document.getElementById("myAnswer").value = "";
 });
+})();

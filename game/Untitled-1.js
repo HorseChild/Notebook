@@ -1,3 +1,9 @@
+(() => {
+if (!window.gameProgress.isRoundUnlocked(3)) {
+    window.gameProgress.showLockedRound(3);
+    return;
+}
+
 // level one round 3.
 let score = 0;
 let currentAnswer = 0;
@@ -7,6 +13,8 @@ let timer;
 function generateQuestion() {
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
+    const num3 = -Math.floor(Math.random() * 10) - 1;
+    const num4 = -Math.floor(Math.random() * 10) - 1;
     if (num2 > num1 && !(num1 - num2 === 0)) {
         currentAnswer = num1 - num2;
         document.getElementById("question").textContent = `What is ${num1} - ${num2}?`;
@@ -14,10 +22,26 @@ function generateQuestion() {
         currentAnswer = num2 - num1;
         document.getElementById("question").textContent = `What is ${num2} - ${num1}?`;
     }
+    else {
+        if (num4 > num3 && !(num3 - num4 === 0)) {
+            currentAnswer = num3 - num4;
+            document.getElementById("question").textContent = `What is ${num3} - ${num4}?`;
+        } else if (num3 > num4 && !(num4 - num3 === 0)) {
+            currentAnswer = num4 - num3;
+            document.getElementById("question").textContent = `What is ${num4} - ${num3}?`;
+        } else if (num3>-num4) {
+            currentAnswer = num3 - num4;
+            document.getElementById("question").textContent = `What is ${num3} - ${num4}?`;
+        }
+    }
 }
 //ends the game and displays the final score
 function finishGame(message) {
     clearInterval(timer);
+    window.gameProgress.saveRoundScore(3, score);
+    if (score === 10) {
+        document.getElementById("endoflevelmsg").textContent = msg;
+    }
     document.getElementById("question").textContent = message;
     document.getElementById("myAnswer").disabled = true;
     document.getElementById("submitBtn").disabled = true;
@@ -57,4 +81,4 @@ document.getElementById("answerForm").addEventListener("submit", function (event
 });
 
 var msg = `You've finished the packet! Move on to the next packet??`
-document.getElementById("endoflevelmsg").textContent = msg;
+})();
